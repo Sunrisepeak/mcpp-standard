@@ -12,9 +12,18 @@ d2x = {
         name = "dslings",
         editor = "vscode",
     },
+
+    commands = {
+        update = {
+            linux = "tools/update_upstream.sh",
+            macosx = "tools/update_upstream.sh",
+            windows = "tools/update_upstream.bat",
+        },
+    },
+
     private = {
         -- project private attributes
-    }
+    },
 }
 
 --xlings_llm_config = "llm.config.xlings"
