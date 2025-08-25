@@ -7,7 +7,7 @@
 </div>
 
 <div align="center">
-  <a href="book/src/chapter_1.md" target="_blank">电子书</a>
+  <a href="https://sunrisepeak.github.io/mcpp-standard" target="_blank">在线电子书</a>
   |
   <a href="https://www.bilibili.com/video/BV182MtzPEiX" target="_blank">介绍</a>
   |
@@ -22,21 +22,19 @@
 
 ---
 
-## 更新日志
+## 更新日志 - [ 2025/08/28 ]
 
 > 持续更新中
 
-**cpp11 - 10 - 委托构造函数**
+**C++11 - 11 - 继承造函数**
 
-- **[video](https://www.bilibili.com/video/BV1zft3zSEER) / [anim-code](https://github.com/Sunrisepeak/mcpp-standard/blob/main/videos/cpp11/10-delegating-constructors.py)** - 2025/08/04
-- **[code-0](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/10-delegating-constructors-0.cpp) / [code-1](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/10-delegating-constructors-1.cpp)** - 2025/08/02
-- **[book](https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/src/cpp11/10-delegating-constructors.md)** - 2025/08/01
+- **[book](https://sunrisepeak.github.io/mcpp-standard/cpp11/11-inherited-constructors.html)** - 2025/08/28
+- **video / code** - todo
 
-**获取最新内容并进入自动检测**
+**获取最新内容**
 
 ```bash
 d2x update
-d2x checker delegating-constructors
 ```
 
 更多 -> [changelog](https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/src/changelog.md)

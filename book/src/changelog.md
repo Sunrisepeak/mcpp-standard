@@ -3,6 +3,12 @@
 ## 2025/08
 
 ---
+**C++11 - 11 - 继承造函数**
+
+- **[book](https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/src/cpp11/11-inherited-constructors.md)** - 2025/08/28
+- **video / code** - todo
+
+---
 **C++11 - 10 - 委托构造函数**
 
 - **[video](https://www.bilibili.com/video/BV1zft3zSEER) / [anim-code](https://github.com/Sunrisepeak/mcpp-standard/blob/main/videos/cpp11/10-delegating-constructors.py)** - 2025/08/04
