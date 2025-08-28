@@ -4,7 +4,7 @@
 
 | Book | Video | Code | X |
 | --- | --- | --- | --- |
-| [cppreference](https://en.cppreference.com/w/cpp/language/using_declaration.html#Inheriting_constructors) / [markdown](https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/src/cpp11/11-inherited-constructors.md) | [视频解读]() | [练习代码]() |  |
+| [cppreference](https://en.cppreference.com/w/cpp/language/using_declaration.html#Inheriting_constructors) / [markdown](https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/src/cpp11/11-inherited-constructors.md) | [视频解读]() | [练习代码](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/11-inherited-constructors-0.cpp) |  |
 
 **为什么引入?**
 
@@ -15,7 +15,7 @@
 
 ### 复用基类的构造函数
 
-在**继承构造函数**这个特性引入之前, 即使基类和派生的构造函数形式没有任何区别, 也需要重新定义, 然后通过手动把参数转发到基类, 这不仅造成了一定程度的代码重复, 而且也不够简洁。例如, 下面的`MyObject`就对每个`Base`中的构造函数做了重新实现
+在**继承构造函数**这个特性引入之前, 即使基类和派生的构造函数形式没有任何区别, 也需要重新定义, 这不仅造成了一定程度的代码重复, 而且也不够简洁。例如, 下面的`MyObject`就对每个`Base`中的构造函数做了重新实现
 
 ```cpp
 class ObjectBase {
@@ -33,7 +33,7 @@ public:
 };
 ```
 
-而用这个特性, 通过`using ObjectBase::ObjectBase;`直接就可以继承基类中的构造函数, 不仅可以避免这个过程, 同代码也变的更简洁了
+而用这个特性, 可以通过`using ObjectBase::ObjectBase;`直接继承基类中的构造函数, 避免这个手动转发的过程
 
 ```cpp
 class MyObject : public ObjectBase {
@@ -56,7 +56,7 @@ public:
 
 ### 临时扩展功能用于测试
 
-对一些类型做测试或调试时, 我们常常期望可以使用像`to_string()`之类的一些接口。如果不方便直接修改源代码, 这个时候 就可以使用 **继承构造函数** 的性质来追加一些方便调试的接口函数。例如下面有个`Student`类:
+对一些类型做测试或调试时, 我们常常期望可以使用像`to_string()`之类的一些接口。如果在不方便直接修改源代码的情况下, 就可以使用 **继承构造函数** 的性质创建一个"具有一样接口"的新类型, 并追加一些方便调试的接口函数, 从而在有更方便的调试函数下实现间接测试。例如下面有个`Student`类:
 
 ```cpp
 class Student {
@@ -113,6 +113,7 @@ public:
 
     NoCopy(const NoCopy&) = delete;
     NoCopy& operator=(const NoCopy&) = delete;
+    // ...
 };
 ```
 
@@ -120,7 +121,7 @@ public:
 
 ```cpp
 class Point {
-    double mX, mX;
+    double mX, mY;
 public:
     Point() : mX { 0 }, mY { 0 } { }
     Point(double x, double y) : mX { x }, mY { y } { }
@@ -157,7 +158,21 @@ auto p4 = p2; // error (不能拷贝)
 - 复杂场景或要加一个中间层做特殊处理 -> 一般组合优于继承
 - 简单功能扩展, 且需保留接口使用的一致 -> 一般继承优于组合
 
-## 三、其他
+## 三、练习代码
+
+### 练习代码主题
+
+- 0 - [熟悉继承构造函数特性](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/11-inherited-constructors-0.cpp)
+- 1 - [在功能扩展中的应用 - StudentTest](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/11-inherited-constructors-1.cpp)
+- 2 - [在泛型模板中的应用 - NoCopy / NoMove 行为约束](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/11-inherited-constructors-2.cpp)
+
+### 练习代码自动检测命令
+
+```
+d2x checker inherited-constructors
+```
+
+## 四、其他
 
 - [交流讨论](https://forum.d2learn.org/category/20)
 - [mcpp-standard教程仓库](https://github.com/Sunrisepeak/mcpp-standard)

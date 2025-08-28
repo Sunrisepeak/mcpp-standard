@@ -22,14 +22,15 @@
 
 ---
 
-## 更新日志 - [ 2025/08/28 ]
+## 更新日志 - [ 2025/08/29 ]
 
 > 持续更新中
 
 **C++11 - 11 - 继承造函数**
 
+- **[code-0](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/11-inherited-constructors-0.cpp) / [code-1](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/11-inherited-constructors-1.cpp) / [code-2](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/11-inherited-constructors-2.cpp)** - 2025/08/29
 - **[book](https://sunrisepeak.github.io/mcpp-standard/cpp11/11-inherited-constructors.html)** - 2025/08/28
-- **video / code** - todo
+- **video** - todo
 
 **获取最新内容**
 

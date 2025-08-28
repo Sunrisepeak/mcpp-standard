@@ -116,3 +116,14 @@ target("cpp11-10-delegating-constructors-0")
 
 target("cpp11-10-delegating-constructors-1")
     add_files("10-delegating-constructors-1.cpp")
+
+-- target: cpp11-11-inherited-constructors
+
+target("cpp11-11-inherited-constructors-0")
+    add_files("11-inherited-constructors-0.cpp")
+
+target("cpp11-11-inherited-constructors-1")
+    add_files("11-inherited-constructors-1.cpp")
+
+target("cpp11-11-inherited-constructors-2")
+    add_files("11-inherited-constructors-2.cpp")
