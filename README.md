@@ -69,6 +69,20 @@ d2x update
 
 ## 快速开始
 
+### 在线体验
+
+> [**点击下面按钮**](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=Sunrisepeak/mcpp-standard) 即可在云端自动完成配置, 并进入练习代码检测模式
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=Sunrisepeak/mcpp-standard)
+
+> **提示:**
+>
+> * 更多项目使用细节, 可以参考 **本地练习环境快速搭建** 和 [项目在线文档](https://sunrisepeak.github.io/mcpp-standard)
+> * 使用完毕请记得在 Codespaces 界面 Stop 容器，以节省额度。
+
+
+### 本地练习环境快速搭建
+
 > 通过使用[xlings](https://github.com/d2learn/xlings)获取项目并运行**编译器驱动开发模式**(自动化检测)来进行代码练习
 >
 > - 环境搭建演示视频: [windows](https://www.bilibili.com/video/BV1L4KuzEEcE) - [linux](https://www.bilibili.com/video/BV182MtzPEiX?p=2) - [macos](https://www.bilibili.com/video/BV182MtzPEiX?p=2)
@@ -96,7 +110,7 @@ irm https://d2learn.org/xlings-install.ps1.txt | iex
 
 </details>
 
-### 获取项目
+#### 获取项目
 
 > 下载项目到当前目录并自动配置本地环境
 
@@ -104,7 +118,7 @@ irm https://d2learn.org/xlings-install.ps1.txt | iex
 xlings install d2x:mcpp-standard
 ```
 
-### 本地文档/电子书(可选)
+#### 本地文档/电子书(可选)
 
 > 可以在项目目录执行`d2x book`命令, 打开本地文档(包含使用说明和电子书)
 
@@ -112,7 +126,7 @@ xlings install d2x:mcpp-standard
 d2x book
 ```
 
-### 练习代码自动检测
+#### 练习代码自动检测
 
 > 在项目目录`mcpp-standard`运行checker命令, 进入练习代码自动检测程序
 
@@ -120,13 +134,15 @@ d2x book
 xlings checker
 ```
 
-### 同步最新的练习代码
+#### 同步最新的练习代码
 
 > 由于项目处于持续更新阶段, 可以使用下面的命令进行自动同步(如果同步失败, 可能需要手动用git进行更新项目代码)
 
 ```bash
 d2x update
 ```
+
+---
 
 ## 练习及视频解读列表
 

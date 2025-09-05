@@ -1,0 +1,16 @@
+{
+  "name": "mcpp-standard (Codespaces)",
+  "image": "mcr.microsoft.com/devcontainers/cpp:ubuntu-24.04",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "twxs.cmake",
+        "ms-vscode.cmake-tools",
+        "formulahendry.code-runner"
+      ]
+    }
+  },
+  "remoteUser": "vscode",
+  "postCreateCommand": "/bin/bash .devcontainer/postCreate.sh"
+}
