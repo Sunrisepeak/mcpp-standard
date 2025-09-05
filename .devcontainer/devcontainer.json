@@ -1,13 +1,6 @@
 {
   "name": "mcpp-standard (Codespaces)",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "features": {
-    "ghcr.io/devcontainers/features/common-utils:2": {
-      "installZsh": false,
-      "upgradePackages": true,
-      "username": "vscode"
-    }
-  },
+  "image": "mcr.microsoft.com/devcontainers/cpp:ubuntu-24.04",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -19,6 +12,5 @@
     }
   },
   "remoteUser": "vscode",
-  "onCreateCommand": "sudo apt-get update",
   "postCreateCommand": "/bin/bash .devcontainer/postCreate.sh"
 }
