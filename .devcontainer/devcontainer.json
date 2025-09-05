@@ -1,0 +1,24 @@
+{
+  "name": "mcpp-standard (Codespaces)",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": false,
+      "upgradePackages": true,
+      "username": "vscode"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "twxs.cmake",
+        "ms-vscode.cmake-tools",
+        "formulahendry.code-runner"
+      ]
+    }
+  },
+  "remoteUser": "vscode",
+  "onCreateCommand": "sudo apt-get update",
+  "postCreateCommand": "/bin/bash .devcontainer/postCreate.sh"
+}
