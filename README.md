@@ -128,6 +128,27 @@ xlings checker
 d2x update
 ```
 
+### 在 GitHub Codespaces 中使用（推荐）
+
+如果你不想在本地手动安装依赖，可以直接在云端一键运行：
+
+1. 打开仓库页面，点击 **Code → Create codespace on main** （或你选择的分支）
+2. 等待容器初始化（会自动安装必要的依赖和 `xlings` 工具）
+3. 在终端运行：
+
+   ```bash
+   xlings checker
+   ```
+
+   即可进入自动化检测 / 开发练习模式
+
+> 提示：
+>
+> * 我们在仓库中提供了 `.devcontainer/` 配置，Codespaces 会自动完成环境搭建。
+> * 使用完毕请记得在 Codespaces 界面 Stop 容器，以节省额度。
+
+---
+
 ## 练习及视频解读列表
 
 | c++标准 | 特性 | 标题 | 文档/练习代码/视频 | 备注 |
