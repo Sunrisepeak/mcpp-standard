@@ -9,6 +9,4 @@ if ! command -v xlings >/dev/null 2>&1; then
   curl -fsSL https://d2learn.org/xlings-install.sh | bash
 fi
 
-source ~/.bashrc
-
-xlings checker
+echo "xlings installed"

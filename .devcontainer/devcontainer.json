@@ -12,5 +12,6 @@
     }
   },
   "remoteUser": "vscode",
-  "postCreateCommand": "/bin/bash .devcontainer/postCreate.sh"
+  "postCreateCommand": "/bin/bash .devcontainer/postCreate.sh",
+  "postAttachCommand": "xlings checker"
 }
