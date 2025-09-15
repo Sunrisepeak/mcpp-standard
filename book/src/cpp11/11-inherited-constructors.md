@@ -4,7 +4,7 @@
 
 | Book | Video | Code | X |
 | --- | --- | --- | --- |
-| [cppreference](https://en.cppreference.com/w/cpp/language/using_declaration.html#Inheriting_constructors) / [markdown](https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/src/cpp11/11-inherited-constructors.md) | [Blbl](https://www.bilibili.com/video/BV1bspBzFEEC) / [Youtube]() | [练习代码](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/11-inherited-constructors-0.cpp) |  |
+| [cppreference](https://en.cppreference.com/w/cpp/language/using_declaration.html#Inheriting_constructors) / [markdown](https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/src/cpp11/11-inherited-constructors.md) | [Bili](https://www.bilibili.com/video/BV1bspBzFEEC) / [Youtube](https://youtu.be/p7vbY8XUKnY?si=GZUn9GSW68aU94A6) | [练习代码](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/11-inherited-constructors-0.cpp) |  |
 
 **为什么引入?**
 

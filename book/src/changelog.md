@@ -5,7 +5,7 @@
 ---
 **C++11 - 11 - 继承造函数**
 
-- **video:** [Blbl](https://www.bilibili.com/video/BV1bspBzFEEC) / [Youtube]() / [Code]() - 2025/09/15
+- **video:** [Bili](https://www.bilibili.com/video/BV1bspBzFEEC) / [Youtube](https://youtu.be/p7vbY8XUKnY?si=GZUn9GSW68aU94A6) / [Code](https://github.com/Sunrisepeak/mcpp-standard/blob/main/videos/cpp11/11-inherited-constructors.py)
 
 ## 2025/08
 
