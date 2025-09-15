@@ -54,7 +54,18 @@ public:
 };
 ```
 
-### 临时扩展功能用于测试
+### 类型的功能扩展
+
+在很多特殊的场景下, 我们可能只想给某个类型追加额外的行为/方法, 而不改变其构造行为。这个时候就可使用继承构造
+
+```cpp
+class ObjectXXX : public Object {
+public:
+    using Object::Object;
+
+    void your_method() { /* ... */ }
+};
+```
 
 对一些类型做测试或调试时, 我们常常期望可以使用像`to_string()`之类的一些接口。如果在不方便直接修改源代码的情况下, 就可以使用 **继承构造函数** 的性质创建一个"具有一样接口"的新类型, 并追加一些方便调试的接口函数, 从而在有更方便的调试函数下实现间接测试。例如下面有个`Student`类:
 
@@ -73,10 +84,10 @@ public:
     Student(string id, ...);
 };
 ```
-在对其测试时, 通过实现`StudentTest`并增加一些辅助测试的函数, 这样更方便测试代码的编写。
+通过实现`StudentDebug`并增加一些辅助函数, 这样更方便来获取调试信息
 
 ```cpp
-class StudentTest : public Student {
+class StudentDebug : public Student {
 public:
     using Student::Student;
 
@@ -93,17 +104,60 @@ public:
 };
 ```
 
-其中需要注意的是, 在继承`Student`的同时, 也**继承了构造函数**。所以, 他们具有相同的内部布局、构造方式及接口, 从而实现了:
+同时, 在使用StudentDebug的时候, 不管是对象的创建还有原方法的使用都和Student保持了一致。所以对于这种 **只是增加行为, 而不改变原类型对象的构造形式的需求**, 使用继承构造能很大程度的简化代码
 
-- 保证了, 使用上的一致性和间接测试的有效性
-- 不修改源码, 做了测试相关功能的扩展, 更方便代码的测试
-- 相对外部为其编写测试函数, 能访问到被保护的数据成员(一般建议以只读方式访问)
+> 注: 一般这种方式可以保持同基类一样的 对象构造 + 行为/方法调用形式。但并不一定有一样的内存布局(例如新增虚方法), 并且类型判断上(RTTI)是不相等的
 
-其实, 对于很多 "不改变类数据结构的前提下, 来扩展只读行为或工具函数的很多场景", **继承构造函数**都用发挥其作用
+### 异常或错误类型标识和转发
+
+在错误和异常处理时, 我们可以只定义一个基础的错误类型
+
+```cpp
+class ErrorBase {
+public:
+    ErrorBase() { }
+    ErrorBase(const char *) { }
+    ErrorBase(std::string) { }
+    //...
+};
+```
+
+在定义多个标识场景的错误类型时, 通过使用继承构造函数, 可以轻松的让他们保持和基础错误类型一样的构造形式。例如:
+
+```cpp
+class ConfigError : public ErrorBase {
+public:
+    using ErrorBase::ErrorBase;
+};
+
+class RuntimeError : public ErrorBase {
+public:
+    using ErrorBase::ErrorBase;
+};
+
+class IoError : public ErrorBase {
+public:
+    using ErrorBase::ErrorBase;
+};
+```
+
+每个场景的错误, 对应一个错误类型, 不仅保持了错误对象构造的统一, 也非常适合配合C++的重载机制做错误类型的自动转发和处理。例如, 我们可以给每个错误类型实现对应的处理函数, 没有实现的类型将会使用基础类型对应的处理函数, 非常像很多编程语言中异常捕获和处理的设计。例如下面自定义的错误处理器:
+
+```cpp
+
+struct MyErrProcessor {
+    static void process(ErrorBase err) { /* 基础处理 */ }
+    static void process(ConfigError err) { /* 配置错误处理 */ }
+    // ...
+};
+
+MyErrProcessor::process(errObj); // 自动匹配对应的错误处理函数
+
+```
 
 ### 泛型装饰器和行为约束
 
-**继承构造函数**不仅可以用于普通的继承中, 他还可以用于模板类型。例如, 下面定义的`NoCopy`中, 使用了`using T::T`对泛型T中的构造函数做继承。他的作用是在不改变目标对象的内存布局和使用接口下, 做一定的行为约束
+**继承构造函数**不仅可以用于普通的继承中, 他还可以用于模板类型。例如, 下面定义的`NoCopy`中, 使用了`using T::T`对泛型T中的构造函数做继承。他的作用是在不改变目标对象的构造形式和使用接口下, 做一定的行为约束
 
 ```cpp
 template <typename T>
