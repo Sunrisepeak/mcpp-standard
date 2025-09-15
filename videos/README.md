@@ -35,3 +35,4 @@ manim -pql videos/cpp11/09-list-initialization.py
 | | | -> | [code1](/dslings/cpp11/09-list-initialization-1.cpp) / [code2](/dslings/cpp11/09-list-initialization-2.cpp) / [code3](/dslings/cpp11/09-list-initialization-3.cpp)  | |
 | | `10 - 委托构造函数` | 委托构造基础用法和注意事项 | [code](/dslings/cpp11/10-delegating-constructors-0.cpp) / [video](https://www.bilibili.com/video/BV1zft3zSEER) | |
 | | | -> | [code1](/dslings/cpp11/10-delegating-constructors-1.cpp) | |
+| | `11 - 继承构造函数` | 继承构造函数的基础用法 | [code](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/11-inherited-constructors-0.cpp) / [video](https://www.bilibili.com/video/BV1bspBzFEEC) | |

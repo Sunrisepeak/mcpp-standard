@@ -244,8 +244,7 @@ public:
     static void process(ConfigError err) { 配置错误处理 }
 };
 
-// 自动匹配对应的错误处理函数
-MyErrProcessor::process(errObj);
+MyErrProcessor::process(errObj); // 自动匹配错误处理函数
 """)
 
         code_3_3.code[5].set_color(YELLOW)

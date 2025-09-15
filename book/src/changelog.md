@@ -1,5 +1,12 @@
 # mcpp-standard更新日志
 
+## 2025/09
+
+---
+**C++11 - 11 - 继承造函数**
+
+- **video:** [Blbl](https://www.bilibili.com/video/BV1bspBzFEEC) / [Youtube]() / [Code]() - 2025/09/15
+
 ## 2025/08
 
 ---
