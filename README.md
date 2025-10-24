@@ -22,6 +22,18 @@
 
 ---
 
+## 活动 | [ 📣 MSCP - mcpp项目学习与贡献者培养计划 ](https://moga.d2learn.org/activity/mscp/intro.html)
+
+> MSCP是一款基于mcpp-standard开源项目开发的"地球Online"风格的角色扮演游戏。在游戏中你将扮演一个"编程初学者", 为了入门"现代C++"并揭露其背后的真相, 踏上了一条充满挑战和惊奇的现代C++学习之路...
+
+- `价格:` 免费
+- `开发者:` [Sunrisepeak](https://github.com/Sunrisepeak)
+- `发行商:` [MOGA](https://moga.d2learn.org)
+- `发行时间:` 2025年10月
+- `游戏体量:` 100H - 200H之间
+- `标签:` 类魂系列、模拟人生、🌍Online、程序员、C++、开源、费曼学习法
+- [-> 游戏详情](https://moga.d2learn.org/activity/mscp/intro.html)
+
 ## 更新日志 - [ 2025/09/15 ]
 
 > 持续更新中
@@ -168,7 +180,7 @@ d2x update
 
 ## 社区 | 交流
 
-- **即时交流(QQ群):** 167535744
+- **即时交流(QQ群):** 167535744、1067245099
 - [**论坛版块:**](https://forum.d2learn.org/category/20): 项目相关的练习代码、技术交流和讨论
 
 > **注:** 复杂性问题(技术、环境搭建等问题)推荐在论坛发帖, 并详细描述问题细节, 能更有效于问题的解决和复用
