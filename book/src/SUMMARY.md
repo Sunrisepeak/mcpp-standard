@@ -2,8 +2,12 @@
 
 # 阅读准备
 
-- [序言](./chapter_0.md)
-- [使用说明](./chapter_1.md)
+- [序言](./base/chapter_0.md)
+- [README](./base/chapter_0.md)
+  - [中文](./base/readme/README.zh.md)
+  - [繁體中文](./base/readme/README.zh.hant.md)
+  - [English](./base/readme/README.md)
+- [使用说明](./base/chapter_1.md)
 
 # C++11核心语言特性
 
