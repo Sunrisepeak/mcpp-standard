@@ -23,10 +23,10 @@
 
 ## Goals
 
-- [Master] - **Core language features of Modern C++** and their usage scenarios
-- [Master] - The ability to **identify and debug issues** using compiler error messages
-- [Familiarize] - The ability to solve unfamiliar C++ problems using documentation and [cppreference](https://cppreference.com)
-- [Understand] - How to participate in the technical community — using open-source projects, asking questions, joining discussions, or contributing
+- **`[Master]`** - **Core language features of Modern C++** and their usage scenarios
+- **`[Master]`** - The ability to **identify and debug issues** using compiler error messages
+- **`[Familiarize]`** - The ability to solve unfamiliar C++ problems using documentation and [cppreference](https://cppreference.com)
+- **`[Understand]`** - How to participate in the technical community — using open-source projects, asking questions, joining discussions, or contributing
 
 ## Quick Start
 
