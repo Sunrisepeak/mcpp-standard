@@ -1,6 +1,6 @@
 # Summary
 
-- [语言支持 - 中文 | English](./lang.md)
+- [README](./README.md)
 
 # 阅读准备
 

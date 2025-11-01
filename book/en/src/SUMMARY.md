@@ -1,6 +1,6 @@
 # Summary
 
-- [Language Support - 中文 | English](./lang.md)
+- [README](./README.md)
 
 # Getting Started
 

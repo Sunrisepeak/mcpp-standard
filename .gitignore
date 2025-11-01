@@ -37,6 +37,8 @@ __pycache__
 # d2x project files
 .xlings
 .vscode
+.xmake
+.zed
 llm.config.xlings
 media
-
+build

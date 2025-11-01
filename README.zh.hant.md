@@ -8,7 +8,7 @@
 
   <em>動手做 | 現代CPP核心語言特性 - <b>"強調動手實作的C++教學專案"</b></em>
 
-  <b> [Book] + [Video] + [Code] + [X] </b>
+  <b> [📚Book] + [🎥Video] + [⌨️Code] + [👥X] </b>
 </div>
 
 [中文]: README.zh.md
@@ -16,10 +16,10 @@
 [English]: README.md
 [Todo]: README.md
 
-[Book]: https://sunrisepeak.github.io/mcpp-standard
-[Video]: https://youtube.com/playlist?list=PL7uow6t1QjF0ooMLkLSS96swpSuBZvoRE
-[Code]: https://github.com/Sunrisepeak/mcpp-standard/tree/main/dslings
-[X]: https://forum.d2learn.org/category/20
+[📚Book]: https://sunrisepeak.github.io/mcpp-standard
+[🎥Video]: https://www.bilibili.com/video/BV182MtzPEiX
+[⌨️Code]: https://github.com/Sunrisepeak/mcpp-standard/tree/main/dslings
+[👥X]: https://forum.d2learn.org/category/20
 
 ## 目標
 

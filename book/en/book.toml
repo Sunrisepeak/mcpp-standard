@@ -1,6 +1,6 @@
 # docs: https://rust-lang.github.io/mdBook
 [book]
-title = "mcpp-standard | Dive into Modern C++ Core Language Features"
+title = "mcpp-standard | D2X - Modern C++ Core Language Features"
 author = "sunrispeak"
 language = "en"
 

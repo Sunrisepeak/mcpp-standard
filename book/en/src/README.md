@@ -1,6 +1,6 @@
 <div align=right>
 
-  [中文] | [繁體中文] | [English] | [Todo]
+  👉 📚 [中文] | [English] | [Github]
 </div>
 
 <div align=center>
@@ -11,10 +11,9 @@
   <b> [📚Book] + [🎥Video] + [⌨️Code] + [👥X] </b>
 </div>
 
-[中文]: README.zh.md
-[繁體中文]: README.zh.hant.md
-[English]: README.md
-[Todo]: README.md
+[中文]: ../
+[GITHUB]: https://github.com/Sunrisepeak/mcpp-standard
+[English]: ./
 
 [📚Book]: https://sunrisepeak.github.io/mcpp-standard
 [🎥Video]: https://www.bilibili.com/video/BV182MtzPEiX
@@ -69,7 +68,7 @@ cd mcpp-standard
 d2x checker
 ```
 
-**👉 [more details...](https://sunrisepeak.github.io/mcpp-standard/base/chapter_1.html)**
+**👉 [more details...](https://sunrisepeak.github.io/mcpp-standard/en/base/chapter_1.html)**
 
 ## Community
 
