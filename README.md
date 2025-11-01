@@ -6,7 +6,7 @@
 <div align=center>
   <img width="320" src="https://github.com/user-attachments/assets/dcc6bdea-71f8-4ed5-b445-6449c88655f3">
 
-  <em>Dive to | Modern C++ Core Language Features - <b>"A C++ tutorial project focused on practical"</b></em>
+  <em>D2X | Modern C++ Core Language Features - <b>"A C++ tutorial project focused on practical"</b></em>
 
   <b> [Book] + [Video] + [Code] + [X] </b>
 </div>

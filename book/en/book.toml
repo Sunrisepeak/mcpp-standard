@@ -1,0 +1,14 @@
+# docs: https://rust-lang.github.io/mdBook
+[book]
+title = "mcpp-standard | Dive into Modern C++ Core Language Features"
+author = "sunrispeak"
+language = "en"
+
+[build]
+build-dir = "../book/en"
+
+[output.html]
+git-repository-url = "https://github.com/Sunrisepeak/mcpp-standard"
+
+[preprocessor.foo]
+# Add any additional configurations

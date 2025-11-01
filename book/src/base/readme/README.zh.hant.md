@@ -1,1 +1,0 @@
-../../../../README.zh.hant.md

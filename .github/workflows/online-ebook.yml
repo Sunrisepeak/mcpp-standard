@@ -9,7 +9,7 @@ on:
   push:
     branches: ["main"]
     paths:
-      - 'book/src/**'
+      - "book/src/**"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -50,7 +50,7 @@ jobs:
       - name: Build with mdBook
         run: |
           export PATH=/home/xlings/.xlings_data/bin:$PATH
-          mdbook build
+          ./build.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
