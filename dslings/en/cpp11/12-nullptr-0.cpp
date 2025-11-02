@@ -24,7 +24,7 @@
 int main() {
 
     // 1. Initialize pointers
-    int* ptr1 = nullpt; // Recommended usage
+    int* ptr1 = nullptr; // Recommended usage
     int* ptr2 = NULL;   // Fix here, add correct type
     int* ptr3 = 0;      // Not recommended traditional usage
 

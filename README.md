@@ -17,7 +17,7 @@
 [Todo]: README.md
 
 [📚Book]: https://sunrisepeak.github.io/mcpp-standard
-[🎥Video]: https://www.bilibili.com/video/BV182MtzPEiX
+[🎥Video]: https://youtube.com/playlist?list=PL7uow6t1QjF0ooMLkLSS96swpSuBZvoRE&si=1xHOGVIYpbzZAosI
 [⌨️Code]: https://github.com/Sunrisepeak/mcpp-standard/tree/main/dslings
 [👥X]: https://forum.d2learn.org/category/20
 

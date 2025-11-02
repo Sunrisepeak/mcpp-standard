@@ -2,9 +2,9 @@
 
 List initialization is an initialization style that uses `{ arg1, arg2, ... }` lists (curly braces) to initialize objects, and can be used in almost all object initialization scenarios, hence it's often called **uniform initialization**. Additionally, it adds type checking for list members to prevent narrowing issues.
 
-| Book | Video | Code | X | 
+| Book | Video | Code | X |
 | --- | --- | --- | --- |
-| [cppreference](https://en.cppreference.com/w/cpp/language/list_initialization.html) / [markdown](https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/src/cpp11/09-list-initialization.md) | [Video Explanation](https://www.bilibili.com/video/BV1vKuQzkEo2) | [Practice Code](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/09-list-initialization-0.cpp) |  |
+| [cppreference](https://en.cppreference.com/w/cpp/language/list_initialization.html) / [markdown](https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/en/src/cpp11/09-list-initialization.md) | [Video Explanation](https://www.bilibili.com/video/BV1vKuQzkEo2) | [Practice Code](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/09-list-initialization-0.cpp) |  |
 
 **Why was it introduced?**
 

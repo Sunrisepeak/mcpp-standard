@@ -1,10 +1,10 @@
 # Usage Guide
 
-**mcpp-standard** is a hands-on tutorial project focused on Modern C++ core language features. Based on the [xlings(d2x) tool](https://github.com/Sunrisepeak/mcpp-standard), it implements a **compiler-driven development model** for code practice that can automatically detect exercise code status and navigate to the next exercise.
+**mcpp-standard** is a hands-on tutorial project focused on Modern C++ core language features. Based on the [xlings(d2x) tool](https://xlings.d2learn.org), it implements a **compiler-driven development model** for code practice that can automatically detect exercise code status and navigate to the next exercise.
 
 ## 0. xlings Tool Installation
 
-> xlings contains the tools required for the tutorial project - [More tool details](https://github.com/d2learn/xlings)
+> xlings contains the tools required for the tutorial project - [More tool details](https://xlings.d2learn.org)
 
 **Linux**
 
