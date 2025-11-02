@@ -27,3 +27,7 @@ d2x = {
 }
 
 --xlings_llm_config = "llm.config.xlings"
+
+mcpp = {
+    lang = "en", -- option: en, zh
+}
