@@ -1,5 +1,14 @@
 # mcpp-standard Changelog
 
+## 2025/11
+
+---
+
+**C++11 - 12 - nullptr - Pointer Literal**
+
+- `Book`: [zh](https://sunrisepeak.github.io/mcpp-standard/cpp11/12-nullptr.html) / [en](https://sunrisepeak.github.io/mcpp-standard/en/cpp11/12-nullptr.html) - 2025/11/02
+- `Code`: [zh](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/12-nullptr-0.cpp) / [en](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/en/cpp11/12-nullptr-0.cpp) - 2025/11/02
+
 ## 2025/09
 
 ---

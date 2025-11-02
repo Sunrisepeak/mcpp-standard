@@ -127,3 +127,14 @@ target("cpp11-11-inherited-constructors-1")
 
 target("cpp11-11-inherited-constructors-2")
     add_files("11-inherited-constructors-2.cpp")
+
+-- target: cpp11-12-nullptr
+
+target("cpp11-12-nullptr-0")
+    add_files("12-nullptr-0.cpp")
+
+target("cpp11-12-nullptr-1")
+    add_files("12-nullptr-1.cpp")
+
+target("cpp11-12-nullptr-2")
+    add_files("12-nullptr-2.cpp")

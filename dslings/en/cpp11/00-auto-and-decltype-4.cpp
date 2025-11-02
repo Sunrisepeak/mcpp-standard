@@ -11,7 +11,7 @@
 //   - https://en.cppreference.com/w/cpp/language/decltype
 //   - https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/src/cpp11/00-auto-and-decltype.md
 //
-// Exercise discussion: http://forum.d2learn.org/post/357
+// Forum: https://forum.d2learn.org/category/20
 //
 // Auto-Checker command:
 //

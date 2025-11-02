@@ -14,6 +14,7 @@
 - [列表初始化](./cpp11/09-list-initialization.md)
 - [委托构造函数](./cpp11/10-delegating-constructors.md)
 - [继承构造函数](./cpp11/11-inherited-constructors.md)
+- [nullptr - 指针字面量](./cpp11/12-nullptr.md)
 
 # C++14核心语言特性
 
