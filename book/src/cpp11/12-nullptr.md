@@ -168,13 +168,13 @@ bool isEmpty = (ptr == nullptr);  // true
 
 ## 三、练习代码
 
-练习代码主题
+### 练习代码主题
 
 - 0 - [nullptr基础用法](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/12-nullptr-0.cpp)
 - 1 - [nullptr的函数重载](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/12-nullptr-1.cpp)
 - 2 - [nullptr在模板编程中的优势](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/12-nullptr-2.cpp)
 
-练习代码自动检测命令
+### 练习代码自动检测命令
 
 ```bash
 d2x checker nullptr

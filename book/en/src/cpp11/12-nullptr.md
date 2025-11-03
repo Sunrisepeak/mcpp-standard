@@ -168,13 +168,13 @@ bool isEmpty = (ptr == nullptr);  // true
 
 ## III. Practice Code
 
-Practice Code Topics
+### Practice Code Topics
 
 - 0 - [nullptr Basic Usage](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/en/cpp11/12-nullptr-0.cpp)
 - 1 - [nullptr Function Overloading](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/en/cpp11/12-nullptr-1.cpp)
 - 2 - [nullptr Advantages in Template Programming](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/en/cpp11/12-nullptr-2.cpp)
 
-Auto-Checker Command
+### Auto-Checker Command
 
 ```bash
 d2x checker nullptr

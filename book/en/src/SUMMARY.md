@@ -15,6 +15,7 @@
 - [Delegating Constructors](./cpp11/10-delegating-constructors.md)
 - [Inherited Constructors](./cpp11/11-inherited-constructors.md)
 - [nullptr - Pointer Literal](./cpp11/12-nullptr.md)
+- [long long - 64-bit Integer Type](./cpp11/13-long-long.md)
 
 # C++14 Core Language Features
 

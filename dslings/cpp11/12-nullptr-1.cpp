@@ -10,7 +10,7 @@
 //   - https://en.cppreference.com/w/cpp/language/nullptr
 //   - https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/src/cpp11/12-nullptr.md
 //
-// 练习交流讨论: http://forum.d2learn.org/post/359
+// 练习交流讨论: http://forum.d2learn.org
 //
 // Auto-Checker/自动检测命令:
 //

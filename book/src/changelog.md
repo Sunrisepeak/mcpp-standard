@@ -4,6 +4,11 @@
 
 ---
 
+**C++11 - 13 - long long - 64位整数类型**
+
+- `Book`: [zh](https://sunrisepeak.github.io/mcpp-standard/cpp11/13-long-long.html) / [en](https://sunrisepeak.github.io/mcpp-standard/en/cpp11/13-long-long.html) - 2025/11/03
+- `Code`: [zh](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/13-long-long-0.cpp) / [en](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/en/cpp11/13-long-long-0.cpp) - 2025/11/03
+
 **C++11 - 12 - nullptr - 指针字面量**
 
 - `Book`: [zh](https://sunrisepeak.github.io/mcpp-standard/cpp11/12-nullptr.html) / [en](https://sunrisepeak.github.io/mcpp-standard/en/cpp11/12-nullptr.html) - 2025/11/02

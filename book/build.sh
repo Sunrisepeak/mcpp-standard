@@ -12,3 +12,5 @@ cd "$SCRIPT_DIR"
 cd en && mdbook build
 
 echo "Build completed."
+
+# python -m http.server --directory book/book

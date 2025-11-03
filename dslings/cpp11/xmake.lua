@@ -138,3 +138,10 @@ target("cpp11-12-nullptr-1")
 
 target("cpp11-12-nullptr-2")
     add_files("12-nullptr-2.cpp")
+
+-- target: cpp11-13-long-long
+target("cpp11-13-long-long-0")
+    add_files("13-long-long-0.cpp")
+
+target("cpp11-13-long-long-1")
+    add_files("13-long-long-1.cpp")
