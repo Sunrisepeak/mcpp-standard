@@ -1,3 +1,11 @@
+<div align=right>
+
+  🌎 [中文] | [English]
+</div>
+
+[中文]: ../../cpp11/09-list-initialization.html
+[English]: ./09-list-initialization.html
+
 # List Initialization
 
 List initialization is an initialization style that uses `{ arg1, arg2, ... }` lists (curly braces) to initialize objects, and can be used in almost all object initialization scenarios, hence it's often called **uniform initialization**. Additionally, it adds type checking for list members to prevent narrowing issues.

@@ -1,3 +1,11 @@
+<div align=right>
+
+  🌎 [中文] | [English]
+</div>
+
+[中文]: ../../base/chapter_1.html
+[English]: ./chapter_1.html
+
 # Usage Guide
 
 **mcpp-standard** is a hands-on tutorial project focused on Modern C++ core language features. Based on the [xlings(d2x) tool](https://xlings.d2learn.org), it implements a **compiler-driven development model** for code practice that can automatically detect exercise code status and navigate to the next exercise.

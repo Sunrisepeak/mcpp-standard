@@ -1,3 +1,11 @@
+<div align=right>
+
+  🌎 [中文] | [English]
+</div>
+
+[中文]: ../../cpp11/10-delegating-constructors.html
+[English]: ./10-delegating-constructors.html
+
 # Delegating Constructors
 
 Delegating constructors are syntactic sugar introduced in C++11. Through simple syntax, they can avoid writing excessive repetitive code and achieve constructor logic reuse without affecting performance.

@@ -1,3 +1,11 @@
+<div align=right>
+
+  🌎 [中文] | [English]
+</div>
+
+[中文]: ../changelog.html
+[English]: ./changelog.html
+
 # mcpp-standard Changelog
 
 ## 2025/11

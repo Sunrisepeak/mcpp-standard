@@ -1,3 +1,11 @@
+<div align=right>
+
+  🌎 [中文] | [English]
+</div>
+
+[中文]: ../../cpp11/11-inherited-constructors.html
+[English]: ./11-inherited-constructors.html
+
 # Inherited Constructors
 
 Inherited constructors are a syntactic feature introduced in C++11 that solves the tedious problem of derived classes repeatedly defining base class constructors in class inheritance structures.

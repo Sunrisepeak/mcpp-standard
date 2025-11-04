@@ -1,3 +1,11 @@
+<div align=right>
+
+  🌎 [中文] | [English]
+</div>
+
+[中文]: ./00-auto-and-decltype.html
+[English]: ../en/cpp11/00-auto-and-decltype.html
+
 # 类型自动推导 - auto和decltype
 
 auto 和 decltype 是C++11引入的强有力的**类型自动推导**工具. 不仅让代码变的更加简洁, 还增强了模板和泛型的表达能力

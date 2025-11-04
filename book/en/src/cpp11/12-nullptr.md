@@ -1,3 +1,11 @@
+<div align=right>
+
+  🌎 [中文] | [English]
+</div>
+
+[中文]: ../../cpp11/12-nullptr.html
+[English]: ./12-nullptr.html
+
 # nullptr - Pointer Literal
 
 `nullptr` is a **pointer literal** introduced in C++11, used to represent null pointers. It addresses the shortcomings of traditional null pointer representations (such as `NULL` and `0`) in terms of type safety and overload resolution.

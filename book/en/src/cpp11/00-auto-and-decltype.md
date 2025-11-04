@@ -1,3 +1,11 @@
+<div align=right>
+
+  🌎 [中文] | [English]
+</div>
+
+[中文]: ../../cpp11/00-auto-and-decltype.html
+[English]: ./00-auto-and-decltype.html
+
 # Type Deduction - auto and decltype
 
 auto and decltype are powerful **type deduction** tools introduced in C++11. They not only make code more concise but also enhance the expressive power of templates and generics.

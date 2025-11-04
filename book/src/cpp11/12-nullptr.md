@@ -1,3 +1,11 @@
+<div align=right>
+
+  🌎 [中文] | [English]
+</div>
+
+[中文]: ./12-nullptr.html
+[English]: ../en/cpp11/12-nullptr.html
+
 # nullptr - 指针字面量
 
 `nullptr` 是C++11引入的**指针字面量**，用于表示空指针。它解决了传统空指针表示方式（如`NULL`和`0`）在类型安全性和重载解析方面的不足。

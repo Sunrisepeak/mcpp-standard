@@ -1,3 +1,11 @@
+<div align=right>
+
+  🌎 [中文] | [English]
+</div>
+
+[中文]: ./13-long-long.html
+[English]: ../en/cpp11/13-long-long.html
+
 # long long - 64位整数类型
 
 `long long` 是C++11引入的**64位整数类型**，用于表示更大范围的整数值。它解决了传统整数类型在表示大整数时的范围限制问题。

@@ -1,3 +1,11 @@
+<div align=right>
+
+  🌎 [中文] | [English]
+</div>
+
+[中文]: ../../cpp11/13-long-long.html
+[English]: ./13-long-long.html
+
 # long long - 64-bit Integer Type
 
 `long long` is a **64-bit integer type** introduced in C++11, used to represent larger range integer values. It solves the range limitation issues of traditional integer types when representing large integers.

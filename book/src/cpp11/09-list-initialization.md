@@ -1,3 +1,11 @@
+<div align=right>
+
+  🌎 [中文] | [English]
+</div>
+
+[中文]: ./09-list-initialization.html
+[English]: ../en/cpp11/09-list-initialization.html
+
 # 列表初始化
 
 列表初始是一种用`{ arg1, arg2, ... }`列表(大括号), 初始化对象的一种初始化风格, 并且可以用于几乎所有的对象初始化场景, 所以也常常称他为**统一初始化**。此外, 他还增加了列表成员的类型检查功能, 防止一些窄化问题
