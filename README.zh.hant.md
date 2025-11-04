@@ -91,6 +91,8 @@ d2x checker
 
 **👥貢獻者**
 
+[![Star History Chart](https://api.star-history.com/svg?repos=Sunrisepeak/mcpp-standard&type=date&legend=top-left)](https://www.star-history.com/#Sunrisepeak/mcpp-standard&type=date&legend=top-left)
+
 <a href="https://github.com/Sunrisepeak/mcpp-standard/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Sunrisepeak/mcpp-standard" />
 </a>
