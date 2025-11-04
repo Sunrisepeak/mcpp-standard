@@ -88,6 +88,23 @@ if (bigValue > std::numeric_limits<int>::max() || bigValue < std::numeric_limits
 }
 ```
 
+### Bit-Width Confusion - Why Doesn't the Standard Fix the Bit Width?
+
+**Reasons**
+
+- **Hardware Variations:** Different architectures have different "natural word sizes," such as 16/32/64 bits, and many embedded systems only support 8/16-bit multiplication and division instructions. If `long` were forcibly defined as 64 bits, it would cause significant performance issues on some machines (e.g., 32-bit MCUs).
+  - For example: Performing 64-bit calculations on an 8-bit machine without relevant hardware instructions would require algorithmic simulation, leading to a sharp increase in `instruction cycles`.
+- **Historical and ABI Compatibility:** C/C++ predates the widespread adoption of modern 32/64-bit systems. Many platforms have system interfaces, file formats, and calling conventions that have already encoded the size of `int`/`long` into their ABI. Forcing a change in the standard would break binary compatibility and disrupt the ecosystem.
+- **Zero-Cost Abstraction:** The C/C++ standard is designed to map efficiently to the underlying hardware. It only specifies behavior and minimum ranges, allowing implementations to choose the most natural width for the platform, thereby achieving zero-cost or near-zero-cost abstraction.
+
+**Solutions**
+
+- **Optional Fixed-Width Types in C/C++:** When precise bit widths are required, use types from `<cstdint>`/`<stdint.h>` such as `int8_t`, `int16_t`, `int32_t`, `int64_t`, etc.
+- **Avoid Bit-Width Assumptions and Use Static Assertions:** Avoid assuming the bit width of types during development to improve portability. If certain code relies on specific bit-width assumptions, use static assertions to ensure the width meets expectations: `static_assert(sizeof(T) == N)`.
+
+
+![](../../imgs/long-long.0.png)
+
 ## III. Practice Code
 
 ### Practice Code Topics
