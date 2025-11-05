@@ -105,8 +105,6 @@ if (bigValue > std::numeric_limits<int>::max() || bigValue < std::numeric_limits
 
 ![](../imgs/long-long.0.png)
 
-###
-
 ## 三、练习代码
 
 ### 练习代码主题

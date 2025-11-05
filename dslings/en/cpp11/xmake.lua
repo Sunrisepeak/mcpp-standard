@@ -145,3 +145,17 @@ target("cpp11-13-long-long-0")
 
 target("cpp11-13-long-long-1")
     add_files("13-long-long-1.cpp")
+
+-- target: cpp11-14-type-alias
+
+target("cpp11-14-type-alias-0")
+    add_files("14-type-alias-0.cpp")
+
+target("cpp11-14-type-alias-1")
+    add_files("14-type-alias-1.cpp")
+
+target("cpp11-14-type-alias-2")
+    add_files("14-type-alias-2.cpp")
+
+target("cpp11-14-type-alias-3")
+    add_files("14-type-alias-3.cpp")
