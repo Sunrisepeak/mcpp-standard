@@ -1,8 +1,10 @@
 if is_host("windows") then
     set_encodings("source:utf-8", "target:utf-8")
+    set_toolchains("gcc")
+    add_ldflags("-static")
 end
 
-if mcpp.lang == "zh" then
+if d2x.private.mcpp.lang == "zh" then
     add_includedirs(".")
 
     target("00-0-hello-mcpp")

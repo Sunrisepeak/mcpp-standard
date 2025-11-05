@@ -1,9 +1,9 @@
 xname = "mcpp-standard" -- project name
 
 -- xim-deps
-xdeps = {
+xim = {
     vscode = "",
-    cpp = "", -- language
+    cpp = "", -- language：[windows:mingw], [linux:gcc], [macos:clang]
     mdbook = "0.4.43", -- for d2x book
 }
 
@@ -23,11 +23,10 @@ d2x = {
 
     private = {
         -- project private attributes
+        mcpp = {
+            lang = "en", -- option: en, zh
+        }
     },
 }
 
 --xlings_llm_config = "llm.config.xlings"
-
-mcpp = {
-    lang = "en", -- option: en, zh
-}
