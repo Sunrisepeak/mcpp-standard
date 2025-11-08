@@ -1,0 +1,19 @@
+{
+    "C_Cpp.default.includePath": [
+        // local include path
+        "${default}",
+        "${workspaceFolder}",
+        "${workspaceFolder}/dslings",
+    ],
+
+    "C_Cpp.files.exclude": {
+        "**/.vscode": true,
+        "**/build": true,
+        "**/.xmake": true,
+        "**/.xlings": true,
+        "**/.DS_Store": true
+    },
+
+    "files.autoSave": "afterDelay", // or "onFocusChange", "onWindowChange", "off"
+    "files.autoSaveDelay": 1000 // Only relevant for "afterDelay", in milliseconds
+}
