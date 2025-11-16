@@ -28,6 +28,9 @@
 - **`[Familiarize]`** - The ability to solve unfamiliar C++ problems using documentation and [cppreference](https://cppreference.com)
 - **`[Understand]`** - How to participate in the technical community — using open-source projects, asking questions, joining discussions, or contributing
 
+> [!CAUTION]
+> This project is currently in its early development stage. If you encounter any issues, feel free to create an issue for feedback or directly submit a PR to fix it.
+
 ## Quick Start
 
 > Try `Code -> Book -> Video -> X -> Code`

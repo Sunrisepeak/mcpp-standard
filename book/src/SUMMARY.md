@@ -11,9 +11,9 @@
 
 - [auto和decltype - 类型自动推导](./cpp11/00-auto-and-decltype.md)
 - [...](./cpp11/01-default-and-delete.md)
-- [{ a, b， ... } - 列表初始化](./cpp11/09-list-initialization.md)
+- [列表初始化](./cpp11/09-list-initialization.md)
 - [委托构造函数](./cpp11/10-delegating-constructors.md)
-- [B() : A () {} - 继承构造函数](./cpp11/11-inherited-constructors.md)
+- [继承构造函数](./cpp11/11-inherited-constructors.md)
 - [nullptr - 指针字面量](./cpp11/12-nullptr.md)
 - [long long - 64位整数类型](./cpp11/13-long-long.md)
 - [using - 类型别名和别名模板](./cpp11/14-type-alias.md)

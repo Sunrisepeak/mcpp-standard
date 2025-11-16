@@ -53,13 +53,13 @@ d2x book
 > Enter the project directory `mcpp-standard` and run the checker command to enter the practice code auto-detection program
 
 ```bash
-xlings checker
+d2x checker
 ```
 
 ### Specify Exercise for Detection
 
 ```bash
-xlings checker [name]
+d2x checker [name]
 ```
 
 > Note: Exercise names support fuzzy matching
@@ -149,7 +149,23 @@ dslings/hello-mcpp.cpp -->> Current detected file
 Homepage: https://github.com/d2learn/xlings
 ```
 
-## 3. Resources and Communication
+## 3. Configure Project Language
+
+Edit the `lang` attribute in the project configuration file `config.xlings`. `zh` corresponds to Chinese, and `en` corresponds to English.
+
+```lua
+    },
+
+    private = {
+        -- project private attributes
+        mcpp = {
+            lang = "en", -- option: en, zh
+        }
+    },
+}
+```
+
+## 4. Resources and Communication
 
 **Communication Group (Q):** 167535744
 

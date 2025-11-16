@@ -21,6 +21,9 @@
 [⌨️Code]: https://github.com/Sunrisepeak/mcpp-standard/tree/main/dslings
 [👥X]: https://forum.d2learn.org/category/20
 
+> [!CAUTION]
+> 该项目当前处于开发初期, 如果你发现任何问题, 欢迎创建issues反馈或直接提交PR进行修复
+
 ## 目标
 
 - **`[掌握]`** - **现代C++核心的语言特性**及使用场景

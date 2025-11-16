@@ -15,5 +15,8 @@
     },
 
     "files.autoSave": "afterDelay", // or "onFocusChange", "onWindowChange", "off"
-    "files.autoSaveDelay": 1000 // Only relevant for "afterDelay", in milliseconds
+    "files.autoSaveDelay": 1000,
+    "files.associations": {
+        "ostream": "cpp"
+    } // Only relevant for "afterDelay", in milliseconds
 }
