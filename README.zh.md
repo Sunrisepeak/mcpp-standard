@@ -72,6 +72,26 @@ cd mcpp-standard
 d2x checker
 ```
 
+#### 使用Neovim编辑器
+
+如果你希望使用Neovim编辑器并获得LSP支持：
+
+```bash
+# 克隆项目后，进入dslings目录
+cd mcpp-standard/dslings
+
+# 为clangd生成compile_commands.json
+xmake project -k compile_commands
+
+# 使用nvim打开整个目录
+nvim .
+```
+
+在Neovim中：
+1. 使用 `:terminal` 打开终端
+2. 返回项目根目录：`cd ..`
+3. 运行检测器：`d2x checker`
+
 **👉 [更多细节...](https://sunrisepeak.github.io/mcpp-standard/base/chapter_1.html)**
 
 ## 社区

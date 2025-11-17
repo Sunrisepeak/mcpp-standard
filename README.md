@@ -72,6 +72,26 @@ cd mcpp-standard
 d2x checker
 ```
 
+#### Using Neovim Editor
+
+If you prefer to use Neovim as your editor with LSP support:
+
+```bash
+# After cloning the project, navigate to dslings directory
+cd mcpp-standard/dslings
+
+# Generate compile_commands.json for clangd
+xmake project -k compile_commands
+
+# Open the directory with nvim
+nvim .
+```
+
+Inside Neovim:
+1. Open a terminal with `:terminal`
+2. Navigate to project root: `cd ..`
+3. Run the checker: `d2x checker`
+
 **👉 [more details...](https://sunrisepeak.github.io/mcpp-standard/base/chapter_1.html)**
 
 ## Community
