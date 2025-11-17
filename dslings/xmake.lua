@@ -4,7 +4,12 @@ if is_host("windows") then
     add_ldflags("-static")
 end
 
-if d2x.private.mcpp.lang == "zh" then
+local lang = "en"
+if d2x and d2x.private and d2x.private.mcpp then
+    lang = d2x.private.mcpp.lang or "en"
+end
+
+if lang == "zh" then
     add_includedirs(".")
 
     target("00-0-hello-mcpp")

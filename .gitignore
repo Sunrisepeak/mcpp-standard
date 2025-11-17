@@ -42,3 +42,5 @@ __pycache__
 llm.config.xlings
 media
 build
+.cache/
+dslings/compile_commands.json

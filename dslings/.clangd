@@ -1,0 +1,18 @@
+CompileFlags:
+  Add:
+    - "-I."
+  Remove:
+    - "-W*"
+
+Diagnostics:
+  ClangTidy:
+    Add: []
+    Remove: ["*"]
+
+Index:
+  Background: Build
+
+InlayHints:
+  Enabled: Yes
+  ParameterNames: Yes
+  DeducedTypes: Yes
