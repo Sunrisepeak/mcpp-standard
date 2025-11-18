@@ -169,31 +169,28 @@ Edit the `lang` attribute in the project configuration file `config.xlings`. `zh
 
 ### Custom Editor - Using nvim as Example
 
-If you prefer to use Neovim as your editor with LSP (clangd) support:
+If you prefer to use Neovim as your editor with LSP (clangd) support, you can configure it as follows:
 
-**Usage Steps:**
+**1. Edit the `editor` attribute in the project configuration file `config.xlings` and set it to `nvim` (or `zed`)**
 
-1. The compilation database will be automatically generated during project installation (via `xlings install` command). To manually regenerate:
-   ```bash
-   cd dslings
-   xmake project -k compile_commands
-   cd ..
-   ```
+```bash
+d2x = {
+    checker = {
+        name = "dslings",
+        editor = "nvim", -- option: vscode, nvim, zed
+    },
+```
 
-2. Open the entire project with nvim from the project root directory:
-   ```bash
-   nvim .
-   ```
+**2. Run the one-click dependency installation and environment configuration command in the project root directory**
 
-3. Open a terminal inside nvim and run the code checker:
-   ```vim
-   :terminal
-   ```
+```bash
+xlings install
+```
 
-   In the terminal, execute:
-   ```bash
-   d2x checker
-   ```
+**3. In the project directory, rerun the detection command `d2x checker` to open the corresponding exercise file with Neovim, which will support automatic exercise navigation/switching**
+
+> Note: In Neovim, the "real-time detection feature" is triggered by the `:w` command. That is, after modifying the code, saving the file in Neovim's command-line mode (`:w`) will prompt `d2x` to update the detection results.
+
 
 ## 4. Resources and Communication
 

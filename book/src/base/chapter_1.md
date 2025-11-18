@@ -167,31 +167,27 @@ Homepage: https://github.com/d2learn/xlings
 
 ### 自定义编辑器 - 以nvim编辑器为例
 
-如果你希望使用 Neovim 编辑器并获得 LSP（clangd）支持：
+如果你希望使用 Neovim 编辑器并获得 LSP（clangd）支持, 可以按如下步骤进行配置
 
-**使用步骤:**
+**1.编辑项目配置文件`config.xlings`中的`editor`属性, 设置为`nvim` (或`zed`)**
 
-1. 编译数据库会在项目安装时自动生成（通过 `xlings install` 命令）。如需手动重新生成：
-   ```bash
-   cd dslings
-   xmake project -k compile_commands
-   cd ..
-   ```
+```bash
+d2x = {
+    checker = {
+        name = "dslings",
+        editor = "nvim", -- option: vscode, nvim, zed
+    },
+```
 
-2. 在项目根目录使用 nvim 打开整个项目：
-   ```bash
-   nvim .
-   ```
+**2.在项目根目录运行一键依赖安装和环境配置命令**
 
-3. 在 nvim 中打开终端并运行代码检测：
-   ```vim
-   :terminal
-   ```
+```bash
+xlings install
+```
 
-   在终端中执行：
-   ```bash
-   d2x checker
-   ```
+**3.在项目目录, 重新运行检测命令 `d2x checker` 就会使用nvim打开对应练习文件， 并具备练习自动跳转/切换功能**
+
+> 注: nvim编辑器下的"实时检测功能"的触发时机, 将会对应到 `:w` 命令. 即修改代码后, 在nvim的命令行模式对文件进行保存(`:w`)时, d2x就会更新检测结果
 
 ## 4.资源于交流
 
