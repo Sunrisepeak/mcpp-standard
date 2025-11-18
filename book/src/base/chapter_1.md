@@ -167,50 +167,31 @@ Homepage: https://github.com/d2learn/xlings
 
 ### 自定义编辑器 - 以nvim编辑器为例
 
-项目已在根目录配置了 `.clangd` 文件，支持使用 nvim + clangd 进行代码编辑和补全。
+如果你希望使用 Neovim 编辑器并获得 LSP（clangd）支持：
 
-**配置说明:**
+**使用步骤:**
 
-项目根目录的 `.clangd` 配置如下：
-
-```yaml
-CompileFlags:
-  Add:
-    - "-Idslings"      # 添加 dslings 为包含路径
-    - "-std=c++20"     # 使用 C++20 标准
-  Remove:
-    - "-W*"            # 移除警告标志
-
-Diagnostics:
-  ClangTidy:
-    Add: []
-    Remove: ["*"]
-```
-
-**使用方法:**
-
-1. 直接在项目根目录打开文件：
+1. 在项目根目录，进入 dslings 目录生成编译数据库：
    ```bash
-   cd mcpp-standard
-   nvim dslings/hello-mcpp.cpp
+   cd dslings
+   xmake project -k compile_commands
+   cd ..
    ```
 
-2. 如果 clangd 未能正确识别代码，在 nvim 中重启 LSP：
+2. 在项目根目录使用 nvim 打开整个项目：
+   ```bash
+   nvim .
+   ```
+
+3. 在 nvim 中打开终端并运行代码检测：
    ```vim
-   :LspRestart
+   :terminal
    ```
 
-3. 检查 LSP 状态：
-   ```vim
-   :LspInfo    " 查看 clangd 是否正常启动
-   :LspLog     " 查看详细日志
+   在终端中执行：
+   ```bash
+   d2x checker
    ```
-
-**优势:**
-
-- 无需手动生成 `compile_commands.json`
-- 统一的项目配置，一次设置全局生效
-- 支持代码补全、跳转定义、错误提示等功能
 
 ## 4.资源于交流
 

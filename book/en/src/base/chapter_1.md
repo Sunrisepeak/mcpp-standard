@@ -169,50 +169,31 @@ Edit the `lang` attribute in the project configuration file `config.xlings`. `zh
 
 ### Custom Editor - Using nvim as Example
 
-The project includes a `.clangd` configuration file in the root directory, supporting code editing and completion with nvim + clangd.
+If you prefer to use Neovim as your editor with LSP (clangd) support:
 
-**Configuration Details:**
+**Usage Steps:**
 
-The `.clangd` configuration in the project root directory:
-
-```yaml
-CompileFlags:
-  Add:
-    - "-Idslings"      # Add dslings as include path
-    - "-std=c++20"     # Use C++20 standard
-  Remove:
-    - "-W*"            # Remove warning flags
-
-Diagnostics:
-  ClangTidy:
-    Add: []
-    Remove: ["*"]
-```
-
-**Usage:**
-
-1. Open files directly from the project root directory:
+1. From the project root directory, navigate to dslings and generate compilation database:
    ```bash
-   cd mcpp-standard
-   nvim dslings/hello-mcpp.cpp
+   cd dslings
+   xmake project -k compile_commands
+   cd ..
    ```
 
-2. If clangd fails to recognize code properly, restart LSP in nvim:
+2. Open the entire project with nvim from the project root directory:
+   ```bash
+   nvim .
+   ```
+
+3. Open a terminal inside nvim and run the code checker:
    ```vim
-   :LspRestart
+   :terminal
    ```
 
-3. Check LSP status:
-   ```vim
-   :LspInfo    " Check if clangd is running properly
-   :LspLog     " View detailed logs
+   In the terminal, execute:
+   ```bash
+   d2x checker
    ```
-
-**Benefits:**
-
-- No need to manually generate `compile_commands.json`
-- Unified project configuration, set once and work everywhere
-- Support for code completion, go to definition, error diagnostics, and more
 
 ## 4. Resources and Communication
 
