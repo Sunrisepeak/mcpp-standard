@@ -149,7 +149,9 @@ dslings/hello-mcpp.cpp -->> Current detected file
 Homepage: https://github.com/d2learn/xlings
 ```
 
-## 3. Configure Project Language
+## 3. Configure Project (Optional)
+
+### Configure Language
 
 Edit the `lang` attribute in the project configuration file `config.xlings`. `zh` corresponds to Chinese, and `en` corresponds to English.
 
@@ -164,6 +166,31 @@ Edit the `lang` attribute in the project configuration file `config.xlings`. `zh
     },
 }
 ```
+
+### Custom Editor - Using nvim as Example
+
+If you prefer to use Neovim as your editor with LSP (clangd) support, you can configure it as follows:
+
+**1. Edit the `editor` attribute in the project configuration file `config.xlings` and set it to `nvim` (or `zed`)**
+
+```bash
+d2x = {
+    checker = {
+        name = "dslings",
+        editor = "nvim", -- option: vscode, nvim, zed
+    },
+```
+
+**2. Run the one-click dependency installation and environment configuration command in the project root directory**
+
+```bash
+xlings install
+```
+
+**3. In the project directory, rerun the detection command `d2x checker` to open the corresponding exercise file with Neovim, which will support automatic exercise navigation/switching**
+
+> Note: In Neovim, the "real-time detection feature" is triggered by the `:w` command. That is, after modifying the code, saving the file in Neovim's command-line mode (`:w`) will prompt `d2x` to update the detection results.
+
 
 ## 4. Resources and Communication
 

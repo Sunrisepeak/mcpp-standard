@@ -1,16 +1,21 @@
+-- https://xlings.d2learn.org
+
 xname = "mcpp-standard" -- project name
 
 -- xim-deps
 xim = {
-    vscode = "",
+    vscode = "", -- config by checker.editor
     cpp = "", -- language：[windows:mingw], [linux:gcc], [macos:clang]
     mdbook = "0.4.43", -- for d2x book
+    xppcmds = {
+        "xmake project -k compile_commands --project=dslings"
+    }
 }
 
 d2x = {
     checker = {
         name = "dslings",
-        editor = "vscode",
+        editor = "vscode", -- option: vscode, nvim, zed
     },
 
     commands = {
@@ -29,4 +34,5 @@ d2x = {
     },
 }
 
+xim[d2x.checker.editor or "vscode"] = "" -- config deps(default version
 --xlings_llm_config = "llm.config.xlings"
