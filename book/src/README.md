@@ -79,9 +79,6 @@ cd mcpp-standard/dslings
 # 为clangd生成compile_commands.json
 xmake project -k compile_commands
 
-# 注释掉config.xlings中的editor配置
-# 打开mcpp-standard/config.xlings并注释掉：editor = "vscode",
-
 # 使用nvim打开整个目录
 nvim .
 ```

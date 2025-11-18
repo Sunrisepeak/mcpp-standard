@@ -83,9 +83,6 @@ cd mcpp-standard/dslings
 # Generate compile_commands.json for clangd
 xmake project -k compile_commands
 
-# Comment out the editor line in config.xlings
-# Open mcpp-standard/config.xlings and comment out: editor = "vscode",
-
 # Open the directory with nvim
 nvim .
 ```
