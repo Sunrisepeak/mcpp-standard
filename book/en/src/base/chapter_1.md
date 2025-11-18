@@ -149,7 +149,9 @@ dslings/hello-mcpp.cpp -->> Current detected file
 Homepage: https://github.com/d2learn/xlings
 ```
 
-## 3. Configure Project Language
+## 3. Configure Project (Optional)
+
+### Configure Language
 
 Edit the `lang` attribute in the project configuration file `config.xlings`. `zh` corresponds to Chinese, and `en` corresponds to English.
 
@@ -164,6 +166,53 @@ Edit the `lang` attribute in the project configuration file `config.xlings`. `zh
     },
 }
 ```
+
+### Custom Editor - Using nvim as Example
+
+The project includes a `.clangd` configuration file in the root directory, supporting code editing and completion with nvim + clangd.
+
+**Configuration Details:**
+
+The `.clangd` configuration in the project root directory:
+
+```yaml
+CompileFlags:
+  Add:
+    - "-Idslings"      # Add dslings as include path
+    - "-std=c++20"     # Use C++20 standard
+  Remove:
+    - "-W*"            # Remove warning flags
+
+Diagnostics:
+  ClangTidy:
+    Add: []
+    Remove: ["*"]
+```
+
+**Usage:**
+
+1. Open files directly from the project root directory:
+   ```bash
+   cd mcpp-standard
+   nvim dslings/hello-mcpp.cpp
+   ```
+
+2. If clangd fails to recognize code properly, restart LSP in nvim:
+   ```vim
+   :LspRestart
+   ```
+
+3. Check LSP status:
+   ```vim
+   :LspInfo    " Check if clangd is running properly
+   :LspLog     " View detailed logs
+   ```
+
+**Benefits:**
+
+- No need to manually generate `compile_commands.json`
+- Unified project configuration, set once and work everywhere
+- Support for code completion, go to definition, error diagnostics, and more
 
 ## 4. Resources and Communication
 

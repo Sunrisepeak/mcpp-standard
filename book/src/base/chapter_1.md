@@ -147,7 +147,9 @@ dslings/hello-mcpp.cpp -->> 当前检测的文件
 Homepage: https://github.com/d2learn/xlings
 ```
 
-## 3.配置项目语言
+## 3.配置项目(可选)
+
+### 配置语言
 
 编辑项目配置文件`config.xlings`中的`lang`属性, `zh`对应中文, `en`对应英文
 
@@ -162,6 +164,53 @@ Homepage: https://github.com/d2learn/xlings
     },
 }
 ```
+
+### 自定义编辑器 - 以nvim编辑器为例
+
+项目已在根目录配置了 `.clangd` 文件，支持使用 nvim + clangd 进行代码编辑和补全。
+
+**配置说明:**
+
+项目根目录的 `.clangd` 配置如下：
+
+```yaml
+CompileFlags:
+  Add:
+    - "-Idslings"      # 添加 dslings 为包含路径
+    - "-std=c++20"     # 使用 C++20 标准
+  Remove:
+    - "-W*"            # 移除警告标志
+
+Diagnostics:
+  ClangTidy:
+    Add: []
+    Remove: ["*"]
+```
+
+**使用方法:**
+
+1. 直接在项目根目录打开文件：
+   ```bash
+   cd mcpp-standard
+   nvim dslings/hello-mcpp.cpp
+   ```
+
+2. 如果 clangd 未能正确识别代码，在 nvim 中重启 LSP：
+   ```vim
+   :LspRestart
+   ```
+
+3. 检查 LSP 状态：
+   ```vim
+   :LspInfo    " 查看 clangd 是否正常启动
+   :LspLog     " 查看详细日志
+   ```
+
+**优势:**
+
+- 无需手动生成 `compile_commands.json`
+- 统一的项目配置，一次设置全局生效
+- 支持代码补全、跳转定义、错误提示等功能
 
 ## 4.资源于交流
 
