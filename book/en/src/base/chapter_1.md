@@ -173,7 +173,7 @@ If you prefer to use Neovim as your editor with LSP (clangd) support:
 
 **Usage Steps:**
 
-1. From the project root directory, navigate to dslings and generate compilation database:
+1. The compilation database will be automatically generated during project installation (via `xlings install` command). To manually regenerate:
    ```bash
    cd dslings
    xmake project -k compile_commands

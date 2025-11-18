@@ -171,7 +171,7 @@ Homepage: https://github.com/d2learn/xlings
 
 **使用步骤:**
 
-1. 在项目根目录，进入 dslings 目录生成编译数据库：
+1. 编译数据库会在项目安装时自动生成（通过 `xlings install` 命令）。如需手动重新生成：
    ```bash
    cd dslings
    xmake project -k compile_commands
