@@ -5,6 +5,9 @@ xim = {
     vscode = "",
     cpp = "", -- language：[windows:mingw], [linux:gcc], [macos:clang]
     mdbook = "0.4.43", -- for d2x book
+    xppcmds = {
+        "xmake project -k compile_commands --project=dslings"
+    }
 }
 
 d2x = {
