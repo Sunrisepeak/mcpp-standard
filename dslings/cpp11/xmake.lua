@@ -90,6 +90,7 @@ target("cpp11-07-constexpr-1")
 -- target: cpp11-08-literal-type
 
 target("cpp11-08-literal-type-0")
+    set_languages("c++17") -- TODO: optimize it
     add_files("08-literal-type-0.cpp")
 
 target("cpp11-08-literal-type-1")
