@@ -69,7 +69,7 @@ irm https://d2learn.org/xlings-install.ps1.txt | iex
 ```bash
 xlings install d2x:mcpp-standard
 cd mcpp-standard
-d2x checker
+xlings d2x checker
 ```
 
 **👉 [更多细节...](https://sunrisepeak.github.io/mcpp-standard/base/chapter_1.html)**
