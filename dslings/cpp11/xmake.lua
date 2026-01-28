@@ -160,3 +160,11 @@ target("cpp11-14-type-alias-2")
 
 target("cpp11-14-type-alias-3")
     add_files("14-type-alias-3.cpp")
+
+-- target: cpp11-15-variadic-templates
+
+target("cpp11-15-variadic-templates-0")
+    add_files("15-variadic-templates-0.cpp")
+
+target("cpp11-15-variadic-templates-1")
+    add_files("15-variadic-templates-1.cpp")
